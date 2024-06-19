@@ -18,6 +18,6 @@ target_currency = input("어느 나라의 화폐로 변경할 것인지 입력�
 exchange_rate = get_exchange_rate('KRW', target_currency)
 if exchange_rate:
     converted_price = average_price * exchange_rate
-    print(f"미리 설정된 평균 떡볶이 가격 ({target_currency}): {converted_price:.2f} {target_currency}")
+    print(f"평균 떡볶이 가격 ({target_currency}): {converted_price:.2f} {target_currency}")
 else:
     print("환율 정보를 가져오는 데 실패했습니다.")
